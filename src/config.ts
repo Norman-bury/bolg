@@ -39,7 +39,7 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/demo-avatar.png',
-  name: '柏瑞',
+  name: 'bairui',
   bio: 'We shall never be younger than this day.',
   links: [
     {
