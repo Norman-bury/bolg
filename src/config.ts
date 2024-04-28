@@ -7,7 +7,7 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'burys bolg',
+  title: 'bury bolg',
   subtitle: 'bury Site',
   lang: 'en',
   themeHue: 250,
@@ -39,8 +39,8 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/demo-avatar.png',
-  name: 'Lorem Ipsum',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  name: '柏瑞',
+  bio: 'We shall never be younger than this day.',
   links: [
     {
       name: 'Twitter',
