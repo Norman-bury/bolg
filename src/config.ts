@@ -7,8 +7,8 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Fuwari',
-  subtitle: 'Demo Site',
+  title: 'bury's bolg',
+  subtitle: 'bury Site',
   lang: 'en',
   themeHue: 250,
   banner: {
@@ -31,7 +31,7 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.About,
     {
       name: 'GitHub',
-      url: 'https://github.com/saicaca/fuwari',
+      url: 'https://github.com/Norman-bury',
       external: true,
     },
   ],
@@ -45,7 +45,7 @@ export const profileConfig: ProfileConfig = {
     {
       name: 'Twitter',
       icon: 'fa6-brands:twitter',
-      url: 'https://twitter.com',
+      url: 'https://x.com/BuryKong?t=b5xoyOpn13u1deq1iUfTSw&s=09',
     },
     {
       name: 'Steam',
@@ -55,7 +55,7 @@ export const profileConfig: ProfileConfig = {
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
-      url: 'https://github.com/saicaca/fuwari',
+      url: 'https://github.com/Norman-bury',
     },
   ],
 }
