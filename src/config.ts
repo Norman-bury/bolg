@@ -7,7 +7,7 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'bury's bolg',
+  title: 'burys bolg',
   subtitle: 'bury Site',
   lang: 'en',
   themeHue: 250,
