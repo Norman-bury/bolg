@@ -1,5 +1,7 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+我是柏瑞
+这是我的个人学习记录的网站。欢迎你的来到。
+This is my X [bury](https://twitter.com/i/flow/login?redirect_after_login=%2FBuryKong).
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
