@@ -5,7 +5,7 @@ description: 学习记录介绍这篇论文《SEVEN：通过保留哨兵修剪Tr
 tags: [深度学习, 模型剪枝方法]
 category: 学习记录
 draft: false
-
+---
 # 摘要
 ## 论文简介
 
