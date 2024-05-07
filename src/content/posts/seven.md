@@ -1,7 +1,7 @@
 ---
-title: 从梯度裁剪到智能模型剪枝：SEVEN方法的探索
+title: 从梯度裁剪到模型剪枝：SEVEN方法的探索
 published: 2024-05-05
-description: 学习记录介绍这篇论文《SEVEN：通过保留哨兵修剪Transformer模型》
+description: 学习记录介绍这篇论文《SEVEN：通过保留哨兵修剪Transformer模型》部分1，论文学习
 tags: [深度学习, 模型剪枝方法]
 category: 学习记录
 draft: false
