@@ -44,7 +44,7 @@ SEVEN提出了两种剪枝策略，分别针对训练前和训练中的不同需
   - 计算每个权重的梯度和梯度的统计特性（如均值和方差）。
   - 剪枝那些具有高梯度方差（噪声大）且梯度大小不是特别突出的权重。
 
-![Local image](/constant/seven1.jpg "Algorithm 1: SEVENpre")
+![Local image](/content/seven1.jpg "Algorithm 1: SEVENpre")
 ### Algorithm 1: SEVENpre 详细介绍
 
 #### 输入需求:
@@ -74,7 +74,7 @@ SEVEN提出了两种剪枝策略，分别针对训练前和训练中的不同需
 - **步骤**：
   - 在每个训练周期计算权重的梯度和相关统计量。
   - 动态调整权重的保留或移除，特别关注那些表现出稳定梯度表现的权重。
-![Local image](/constant/seven2.jpg "Algorithm 2: SEVENdyn")
+![Local image](/content/seven2.jpg "Algorithm 2: SEVENdyn")
 ### Algorithm 2: SEVENdyn 详细介绍
 
 #### 输入需求:
