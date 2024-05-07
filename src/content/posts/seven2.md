@@ -39,12 +39,7 @@ $$
 \text{Importance}(W) = \left| \frac{\partial L}{\partial W} \right|
 $$
 
-
-其中 \( L \) 是损失函数，\( W \) 是权重，
-$$
-\(\frac{\partial L}{\partial W}\) 
-$$
-是权重 \( W \) 的梯度。在代码中，通过调用 `loss.backward()` 来自动计算这些梯度。
+其中 \(L\) 是损失函数，\(W\) 是权重，\(\frac{\partial L}{\partial W}\) 是权重 \(W\) 的梯度。在代码中，通过调用 `loss.backward()` 来自动计算这些梯度。
 
 #### 2. 动态修剪权重 (prune_model)
 
@@ -52,10 +47,10 @@ $$
 
 **数学表达：**
 $$
-\[ W = \begin{cases} 
+W = \begin{cases} 
 W & \text{if } \text{Importance}(W) > \tau \\
 0 & \text{otherwise}
-\end{cases} \]
+\end{cases}
 $$
 
 在代码中，这个阈值是通过 `torch.quantile(importance_scores[name], sparsity_level)` 计算得到的，它基于指定的稀疏度级别动态确定。
@@ -66,41 +61,26 @@ $$
 
 **数学表达：**
 $$
-\[ W_{\text{new}} = W \cdot \text{mask} \]
+W_{\text{new}} = W \cdot \text{mask}
 $$
-其中$$ 
-\(\text{mask}\)
-$$ 
-是一个二元数组，其元素根据权重的重要性分数是否大于阈值 
-$$
-\(\tau\) 
-$$
-而确定为1或0。
+其中 \(\text{mask}\) 是一个二元数组，其元素根据权重的重要性分数是否大于阈值 \(\tau\) 而确定为1或0。
 
 ### 梯度的计算
 
 梯度的计算公式是：
 $$
-\[ \nabla L(\theta) \]
+\nabla L(\theta)
 $$
-其中 \( L \) 是损失函数，
-$$
-\( \theta \) 
-$$
-表示模型参数。这个公式用于计算参数对损失的敏感度，是参数更新的基础。
+其中 \(L\) 是损失函数，\(\theta\) 表示模型参数。这个公式用于计算参数对损失的敏感度，是参数更新的基础。
 
 ### 权重更新规则
 
 权重更新规则为：
 $$
-\[ \theta_{\text{new}} = \theta_{\text{old}} - \eta \nabla L(\theta) \]
+\theta_{\text{new}} = \theta_{\text{old}} - \eta \nabla L(\theta)
 $$
-其中
-$$
-\( \eta \) 
-$$
-是学习率。这个规则说明了如何利用梯度来迭代更新权重，以改进模型性能。
-了解到知识点和基础概念以上之后，我们先来通过PyTorch复现这预修剪这一操作。在实际操作中，预修剪通常是通过设置一个阈值，然后将低于这个阈值的权重直接设置为零来实现。以下是一个简单的Python代码示例，展示如何使用PyTorch进行预修剪操作。这个例子中，我们将根据权重的绝对值进行修剪，只保留那些绝对值大于某个阈值的权重。
+其中 \(\eta\) 是学习率。这个规则说明了如何利用梯度来迭代更新权重，以改进模型性能。
+
 
 这里我将展示如何为一个简单的卷积层进行预修剪：
 
