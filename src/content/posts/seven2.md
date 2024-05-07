@@ -39,7 +39,11 @@ $$
 \text{Importance}(W) = \left| \frac{\partial L}{\partial W} \right|
 $$
 
-其中 \(L\) 是损失函数，\(W\) 是权重，\(\frac{\partial L}{\partial W}\) 是权重 \(W\) 的梯度。在代码中，通过调用 `loss.backward()` 来自动计算这些梯度。
+其中 \(L\) 是损失函数，\(W\) 是权重，
+$$
+\(\frac{\partial L}{\partial W}\) 
+$$
+是权重 \(W\) 的梯度。在代码中，通过调用 `loss.backward()` 来自动计算这些梯度。
 
 #### 2. 动态修剪权重 (prune_model)
 
