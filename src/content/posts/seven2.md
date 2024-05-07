@@ -35,30 +35,36 @@ draft: false
 这部分代码负责计算每个权重的重要性分数，主要依据是权重的梯度大小。这基于一个基本的数学原理：如果一个权重的梯度很大，说明这个权重对损失函数的影响很大，因此这个权重被认为是“重要”的。
 
 **数学表达：**
-\[ \text{Importance}(W) = \left| \frac{\partial L}{\partial W} \right| \]
+$$
+\text{Importance}(W) = \left| \frac{\partial L}{\partial W} \right|
+$$
 
-其中 \( L \) 是损失函数，\( W \) 是权重，\(\frac{\partial L}{\partial W}\) 是权重 \( W \) 的梯度。在代码中，通过调用 `loss.backward()` 来自动计算这些梯度。
+
+其中 \( L \) 是损失函数，\( W \) 是权重，$$\(\frac{\partial L}{\partial W}\) $$是权重 \( W \) 的梯度。在代码中，通过调用 `loss.backward()` 来自动计算这些梯度。
 
 #### 2. 动态修剪权重 (prune_model)
 
 根据计算得到的重要性分数，代码将进行动态修剪。通过设置一个阈值，只有那些其重要性分数高于这个阈值的权重会被保留。
 
 **数学表达：**
+$$
 \[ W = \begin{cases} 
 W & \text{if } \text{Importance}(W) > \tau \\
 0 & \text{otherwise}
 \end{cases} \]
+$$
 
 在代码中，这个阈值是通过 `torch.quantile(importance_scores[name], sparsity_level)` 计算得到的，它基于指定的稀疏度级别动态确定。
 
 #### 3. 应用掩码
 
-最后，这个过程涉及到将一个掩码应用于模型的权重。这个掩码基于上述的阈值判断，决定哪些权重应该被保留。
+这个过程涉及到将一个掩码应用于模型的权重。这个掩码基于上述的阈值判断，决定哪些权重应该被保留。
 
 **数学表达：**
+$$
 \[ W_{\text{new}} = W \cdot \text{mask} \]
-
-其中 \(\text{mask}\) 是一个二元数组，其元素根据权重的重要性分数是否大于阈值 \(\tau\) 而确定为1或0。
+$$
+其中$$ \(\text{mask}\)$$ 是一个二元数组，其元素根据权重的重要性分数是否大于阈值 \(\tau\) 而确定为1或0。
 
 ### 梯度的计算
 
