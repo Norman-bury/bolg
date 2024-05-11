@@ -4,7 +4,7 @@ published: 2024-05-11
 description: 学习记录MIT公开课的概率论
 tags: [深度学习, 概率论]
 category: 学习记录
-draft: true
+draft: false
 ---
 # 概率系统分析和应用概率
 
