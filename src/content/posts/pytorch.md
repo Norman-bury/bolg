@@ -2,6 +2,7 @@
 title: Pytorch框架下的模型的训练与验证
 published: 2024-05-15
 description: 学习记录pytorch框架比较复杂的部分，也就是训练和验证，先从对比tensorflow框架开始
+image: "./cover.jpeg"
 tags: [Keras, Pytorch]
 category: 学习记录
 draft: false
@@ -145,5 +146,5 @@ with torch.no_grad():  # 关闭梯度计算
         val_loss = criterion(outputs, labels)
         total_loss += val_loss.item()
 ```
-#总结
+# 总结
 PyTorch 提供了更高的灵活性和控制度，允许手动处理许多细节。而 TensorFlow 的 Keras API 则提供了更高层次的抽象，使得常见的训练过程更简单、更快捷。两个框架各有千秋，选择哪个框架取决于个人需求、项目要求以及对特定框架的熟悉程度。Keras 因其简单性和易用性在初学者和某些工业应用中依然非常受欢迎，而 PyTorch 在研究和需要高度定制的应用中表现更为出色。
