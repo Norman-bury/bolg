@@ -1,8 +1,8 @@
 ---
 title: What KAN I say？KAN网络简介
 published: 2024-05-15
-description: 简要介绍一下KAN网络，优势和比较
-tags: [MLP, KAN]
+description: "简要介绍一下KAN网络，优势和比较。"
+tags: ["MLP", "KAN"]
 category: 学习记录
 draft: false
 ---
