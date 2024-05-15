@@ -1,9 +1,9 @@
 ---
-title: Pytorch框架下的模型的训练与验证
+title: 深入学习Tensor操作的心得体会
 published: 2024-05-15
-description: 学习记录pytorch框架比较复杂的部分，也就是训练和验证，先从对比tensorflow框架开始
-image: "src/content/cover2.jpg"
-tags: [Keras, Pytorch]
+description: "分享我在学习PyTorch中Tensor操作的经验和感悟。"
+image: "./cover.jpeg"
+tags: ["PyTorch", "Tensor"]
 category: 学习记录
 draft: false
 ---
