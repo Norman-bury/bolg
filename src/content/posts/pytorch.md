@@ -2,7 +2,7 @@
 title: 深入学习Tensor操作的心得体会
 published: 2024-05-15
 description: "分享我在学习PyTorch中Tensor操作的经验和感悟。"
-image: "./cover.jpeg"
+image: "src/content/cover1.jpg"
 tags: ["PyTorch", "Tensor"]
 category: 学习记录
 draft: false
