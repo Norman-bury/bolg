@@ -3,7 +3,7 @@ title: 深入学习Tensor操作的心得体会
 published: 2024-04-28
 description: "分享我在学习PyTorch中Tensor操作的经验和感悟。"
 image: "./cover.jpeg"
-tags: ["PyTorch", "Tensor操作", "机器学习"]
+tags: ["PyTorch", "Tensor"]
 category: 学习记录
 draft: false
 ---
@@ -31,4 +31,4 @@ draft: false
 
 ## 结论
 
-通过这段时间的学习，我对PyTorch有了初步的掌握，并且对深度学习的背后原理有了更深的理解。我期待在接下来的学习中，继续探索更多高级功能和算法。
+通过这段时间的学习，我对PyTorch有了初步的掌握.
