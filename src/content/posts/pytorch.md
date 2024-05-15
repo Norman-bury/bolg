@@ -2,7 +2,7 @@
 title: Pytorch框架下的模型的训练与验证
 published: 2024-05-15
 description: 学习记录pytorch框架比较复杂的部分，也就是训练和验证，先从对比tensorflow框架开始
-image: "src/content/posts/img/WechatIMG1336.jpg"
+image: "src/assets/images/img/WechatIMG1336.jpg"
 tags: [Keras, Pytorch]
 category: 学习记录
 draft: false
