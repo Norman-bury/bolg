@@ -63,3 +63,4 @@ class TransformerWithMLP(nn.Module):
 
 通过这项研究，确实看到了AI模型简化的可能性。使用MLP来替代传统的注意力机制不仅能节约计算资源，还能保持良好的模型性能。但是已经有许多知识蒸馏的模型可供使用，不知道未来谁的发展会更胜一筹。
 
+- 复现网站：https://www.kaggle.com/code/bairuigong/rethinking-attention2
