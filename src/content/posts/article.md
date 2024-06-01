@@ -6,9 +6,9 @@ tags: ["抽油泵","功图","机器学习"]
 category: 学习记录
 draft: false
 ---
-![Local image](src/content/yiqi1.jpg "yiqi1")
-# 论文题目：自动识别抽油杆泵系统工作状态的方法：基于示功图的迁移学习和支持向量机
-![Local image](src/content/yiqi1.jpg "yiqi1")
+
+# 1.论文题目：自动识别抽油杆泵系统工作状态的方法：基于示功图的迁移学习和支持向量机
+![Local image](src/content/article1.jpg"a1")
 ## 摘要
 本论文提出了一种基于AlexNet的迁移学习和支持向量机（SVM）的自动故障诊断方法，用于识别抽油杆泵系统的工作状态。通过传感器采集的大量示功图数据，采用AlexNet提取代表性特征，并利用基于错误校正输出码（ECOC）模型的SVM进行分类。实验结果表明，该方法能有效减少人工劳动，提高识别准确率。
 
@@ -80,12 +80,12 @@ model.summary()
 作者通过实验验证了提出方法的有效性，具体步骤如下：
 1. **数据集**: 使用来自中国北方油田的实际数据进行实验。
 2. **分类准确率**: AlexNet-SVM方法的总体分类准确率超过99%，显著优于传统方法。
-![Local image](src/content/yiqi1.jpg "yiqi1")
+![Local image](src/content/article1a.jpg "1a")
 ## 结论
 本文提出的基于AlexNet和SVM的方法有效地自动识别抽油杆泵系统的工作状态，减少了人工干预，提高了识别准确率。未来的研究将收集更多数据，进一步改进算法性能，以应对更复杂的工业应用场景。
 
-# 论文题目：使用机器学习诊断抽油杆泵井的操作条件和传感器故障
-![Local image](src/content/yiqi1.jpg "yiqi1")
+# 2.论文题目：使用机器学习诊断抽油杆泵井的操作条件和传感器故障
+![Local image](src/content/article2.jpg "a2")
 ## 摘要
 在抽油杆泵井中，由于缺乏对操作条件或传感器故障的早期诊断，许多问题可能会被忽视，从而增加停机时间和生产损失。本文采用机器学习算法，对来自38口井的超过50000张示功图进行了诊断测试，评估了决策树、随机森林和XGBoost三种算法的性能，并使用了傅里叶、Wavelet和负载值三种描述符。结果表明，该方法在75%的测试中准确率超过92%，最高达99.84%。
 
@@ -146,12 +146,12 @@ clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)print(f'模型准确率: {accuracy}')
 ```
-![Local image](src/content/yiqi1.jpg "yiqi1")
+![Local image](src/content/article2a.jpg "a2")
 ## 结论
 本文提出的基于机器学习的诊断方法能够有效识别抽油杆泵井的操作条件和传感器故障，具有高准确率和较强的鲁棒性。未来研究可以进一步优化算法，提高模型在不同场景下的适用性。
 
-# 论文题目：抽油杆泵系统的模型预测自动控制及仿真案例研究
-![Local image](src/content/yiqi1.jpg "yiqi1")
+# 3.论文题目：抽油杆泵系统的模型预测自动控制及仿真案例研究
+![Local image](src/content/article3.jpg "a3")
 ## 摘要
 本研究通过自动控制井中的流体高度和井底压力来加速油气资源的回收。尽管文献中有很多研究展示了通过确定目标井底压力来显著增加回收油量，但很少考虑如何控制该值。本研究通过维护井底压力或流体高度来实现这些益处。采用移动视界估计（MHE）仅使用常见的地面测量数据确定不确定的井参数。模型预测控制器（MPC）调整抽油杆泵的冲程速度以维持流体高度。使用带互补性约束的数学程序和非线性规划求解器在接近实时的情况下找到解决方案。结合了抽油杆、井和储层模型来模拟动态井况，并通过大规模求解器进行同时优化。MPC通过保持最佳流体高度来增加累计石油产量，相比传统的停泵控制方法，效果更显著。
 
@@ -244,8 +244,9 @@ print(f'Optimal SPM: {SPM.value[0]}')
 ## 结论
 本文提出的基于MHE和MPC的方法通过优化抽油杆泵的冲程速度，有效地控制井底压力和流体高度，最大化石油产量，并减少设备损坏。在未来的研究中，可以进一步优化该模型以适应更复杂的井况和储层动态。
 
-# 论文题目：Diagnosis for Sucker Rod Pumps Using Bayesian Networks and Dynamometer Card
-![Local image](src/content/yiqi1.jpg "yiqi1")
+
+# 4.论文题目：Diagnosis for Sucker Rod Pumps Using Bayesian Networks and Dynamometer Card
+![Local image](src/content/article4.jpg "a4")
 ## 摘要
 作者们提出了一种基于贝叶斯网络和游标图的计算机辅助诊断方法，以确保油田的利益和提高石油采收率。游标图作为重要的信息资源，广泛用于油田工程的监控和诊断。论文的核心方法是将游标图的坐标转换，以便进行负载分析，并从中提取五个统计特征和香农熵，作为贝叶斯网络的输入。实验结果表明，该方法在诊断抽油杆泵工作状态方面是有效的。
 
@@ -325,8 +326,8 @@ result = model.predict(new_features)print(result)
 这篇论文提出了一种基于贝叶斯网络和游标图的抽油杆泵工作状态诊断方法。通过转换游标图坐标并提取统计特征和香农熵，该方法能够有效地诊断抽油杆泵的正常和故障状态。实验结果验证了该方法的有效性和实用性。
 
 
-# 论文题目：Application of CNN-LSTM in Gradual Changing Fault Diagnosis of Rod Pumping System
-![Local image](src/content/yiqi1.jpg "yiqi1")
+# 5.论文题目：Application of CNN-LSTM in Gradual Changing Fault Diagnosis of Rod Pumping System
+![Local image](src/content/article5.jpg "a5")
 ## 摘要
 提出了一种结合卷积神经网络（CNN）和长短期记忆网络（LSTM）的新方法，用于诊断抽油杆泵系统中的渐变故障。渐变故障是一种特殊的故障类型，其特征在初期并不明显，只有在对井造成不可逆损害后才能识别。该方法利用CNN提取指示图的多层抽象特征，并通过LSTM识别时间序列的变化。相比传统的数学模型诊断方法，CNN-LSTM克服了传统方法的不明确假设条件，提高了诊断的准确性。
 
@@ -398,15 +399,16 @@ model.fit(X_train, y_train, epochs=10, batch_size=32)
 ```
 ## 结论
 这篇论文提出了一种结合CNN和LSTM的方法，用于诊断抽油杆泵系统中的渐变故障。利用CNN的层次结构提取指示图特征，并通过LSTM识别时间序列的变化，实验结果表明该方法的准确率达到了98.4%。与传统方法相比，CNN-LSTM方法在处理大数据集和提高数据利用率方面显示了绝对优势。
+![Local image](src/content/article5a.jpg "5a")
 
-# 论文题目：Predicting Failures and Optimizing Performance in Rod Pumps using Data Science Models
-![Local image](src/content/yiqi1.jpg "yiqi1")
+# 6.论文题目：Predicting Failures and Optimizing Performance in Rod Pumps using Data Science Models
+![Local image](src/content/article6.jpg "a6")
 ## 摘要
 由Mike Pennell在第13届Sucker Rod Pumping Workshop上发表，主要讨论如何利用数据科学模型预测抽油杆泵的故障并优化其性能。论文介绍了机器学习（ML）在抽油杆泵中的应用，阐述了关键的ML术语和概念，展示了各种模型的工作原理和性能，特别是随机森林和梯度提升树等集成模型，并讨论了这些模型在实际应用中的结果和效益。
 
 ## 方法论详细介绍
 
-### 一、特征提取和归一化
+### 特征提取和归一化
 
 #### 特征提取
 论文中提到对抽油杆泵进行多维度监控，包括套管压力、油管压力、泵填充率、运行百分比、峰值负载、最小负载和液体负载等。这些信号被用作特征，以便数学模型能够进行处理和分析。
@@ -419,7 +421,7 @@ model.fit(X_train, y_train, epochs=10, batch_size=32)
 
 归一化后的值范围从-5到5，0表示正常；归一化方差范围从0到10，小于1表示正常。
 
-### 二、机器学习模型
+### 机器学习模型
 
 #### 模型类型
 论文主要使用决策树模型，包括随机森林（Random Forest, RF）和梯度提升树（Gradient Boosted Trees, GBT）。这些集成模型由数十到数百棵树组成，每棵树进行投票。
