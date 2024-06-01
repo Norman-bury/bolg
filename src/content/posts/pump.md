@@ -6,6 +6,7 @@ tags: ["抽油泵", "示功图"]
 category: 背景知识
 draft: false
 ---
+
 # 抽油泵系统（Sucker-Rod Pumping System）
 
 ## 主要组成部分
