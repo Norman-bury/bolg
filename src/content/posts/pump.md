@@ -55,7 +55,7 @@ draft: false
 3. **行业实践和文献**  
    许多学术论文和行业报告会对常见的抽油泵故障类型进行讨论和分类。
 
-![Local image](src/content/wordcard1.jpg "card1")
+![Local image](src/content/workcard1.jpg "card1")
 
 ### 故障类型
 
