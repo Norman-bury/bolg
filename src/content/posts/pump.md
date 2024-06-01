@@ -14,7 +14,7 @@ draft: false
 - **抽油机（Pumping Unit）**：负责将原动机的动力传递到抽油杆的机械装置。
 - **抽油杆（Sucker Rod）**：连接地面抽油机和井下泵的长杆，用于传递动力。
 - **井下泵（Downhole Pump）**：位于井底的泵，通过抽油杆的运动将油井中的油提取到地面。
-下图是抽油泵的主要结构
+- 下图是抽油泵的主要结构
 ![Local image](src/content/pump.jpg "pump")
 ## 操作过程
 
@@ -54,7 +54,7 @@ draft: false
 3. **行业实践和文献**  
    许多学术论文和行业报告会对常见的抽油泵故障类型进行讨论和分类。
 
-![Local image](src/content/workcard1.jpg "card1")
+![Local image](src/content/wordcard1.jpg "card1")
 
 ### 故障类型
 
@@ -67,8 +67,8 @@ draft: false
 - **砂生产 (SAP)**：砂生产导致的异常。
 - **异常示功图 (ADC)**：由于传感器采样和传输过程中的数据丢失和错误导致的异常示功图。
 
-![Local image](src/content/workcard2.jpg "card2")
-![Local image](src/content/workcard3.jpg "card3")
+![Local image](src/content/wordcard2.jpg "card2")
+![Local image](src/content/wordcard3.jpg "card3")
 ## 自动生成示功图的过程
 
 ### 数据收集
