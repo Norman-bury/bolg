@@ -1,11 +1,12 @@
 ---
 title: 利用神经网络模型以及数据科学优化抽油杆泵性能与故障预测
 published: 2024-06-01
-description: "本篇博客将讨论这六篇论文，都是关于抽油泵故障监测预测的，以方法论为主"
+description: "本篇博客将讨论关于抽油泵故障监测预测的六篇论文，以方法论为主"
 tags: ["抽油泵","功图","机器学习"]
 category: 学习记录
 draft: false
 ---
+![Local image](src/content/yiqi1.jpg "yiqi1")
 # 论文题目：自动识别抽油杆泵系统工作状态的方法：基于示功图的迁移学习和支持向量机
 ![Local image](src/content/yiqi1.jpg "yiqi1")
 ## 摘要
