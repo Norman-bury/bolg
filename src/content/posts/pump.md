@@ -68,7 +68,7 @@ draft: false
 - **砂生产 (SAP)**：砂生产导致的异常。
 - **异常示功图 (ADC)**：由于传感器采样和传输过程中的数据丢失和错误导致的异常示功图。
 
-![Local image](src/content/wordcard2.jpg "card2")
+![Local image](src/content/workcard2.jpg "card2")
 ![Local image](src/content/wordcard3.jpg "card3")
 ## 自动生成示功图的过程
 
