@@ -5,6 +5,7 @@ description: "学习抽油泵系统的主要组件和操作过程，并深入探
 tags: ["抽油泵", "示功图"]
 category: 背景知识
 draft: false
+---
 # 抽油泵系统（Sucker-Rod Pumping System）
 
 ## 主要组成部分
