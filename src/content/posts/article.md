@@ -8,7 +8,7 @@ draft: false
 ---
 
 # 1.论文题目：自动识别抽油杆泵系统工作状态的方法：基于示功图的迁移学习和支持向量机
-![Local image](src/content/article1.jpg"a1")
+![Local image](src/content/article1.jpg "a1")
 ## 摘要
 本论文提出了一种基于AlexNet的迁移学习和支持向量机（SVM）的自动故障诊断方法，用于识别抽油杆泵系统的工作状态。通过传感器采集的大量示功图数据，采用AlexNet提取代表性特征，并利用基于错误校正输出码（ECOC）模型的SVM进行分类。实验结果表明，该方法能有效减少人工劳动，提高识别准确率。
 
