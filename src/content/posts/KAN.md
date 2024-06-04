@@ -8,7 +8,9 @@ draft: false
 ---
 
 # 一、从 MLP 讲起
+
 ![Local image](src/content/KAN1.jpg "KAN")
+
 ## 多层感知机（MLP，Multi-Layer Perceptron）
 
 多层感知机（MLP，Multi-Layer Perceptron）是一种全连接的前馈神经网络，通常用于解决分类和回归问题。MLP 由多层组成，每一层都包括多个节点或神经元。这些神经元通常具有非线性激活函数，如 ReLU 或 Sigmoid，以帮助网络学习和近似复杂的非线性函数。MLP 的结构通常包括一个输入层，若干隐藏层，以及一个输出层。
