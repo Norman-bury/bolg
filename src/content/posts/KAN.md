@@ -8,7 +8,7 @@ draft: false
 ---
 
 # 一、从 MLP 讲起
-![Local image](src/content/pump.jpg "pump")
+![Local image](src/content/KAN1.jpg "KAN")
 ## 多层感知机（MLP，Multi-Layer Perceptron）
 
 多层感知机（MLP，Multi-Layer Perceptron）是一种全连接的前馈神经网络，通常用于解决分类和回归问题。MLP 由多层组成，每一层都包括多个节点或神经元。这些神经元通常具有非线性激活函数，如 ReLU 或 Sigmoid，以帮助网络学习和近似复杂的非线性函数。MLP 的结构通常包括一个输入层，若干隐藏层，以及一个输出层。
@@ -23,11 +23,11 @@ MLP 是一种基础的神经网络架构，主要通过层与层之间的全连�
 
 - **节点/神经元连接**：在 MLP 中，每个神经元都与前一层的所有神经元连接，并向下一层的每个神经元传递信息。
 - **激活函数**：MLP 中的每个节点都使用非线性激活函数处理其输入，常见的激活函数包括 ReLU、Sigmoid 和 Tanh。这些固定且非线性的激活函数帮助网络捕捉复杂的数据关系。
-![Local image](src/content/pump.jpg "pump")
-![Local image](src/content/pump.jpg "pump")
+![Local image](src/content/KAN2.jpg "mlp1")
+![Local image](src/content/KAN3.jpg "mlp2")
 
 # 二、MLP导致了深度学习大厦的脆弱
-![Local image](src/content/pump.jpg "pump")
+![Local image](src/content/KAN4.jpg "全链接")
 多层感知机（MLP）在深度学习的发展中确实起到了重要的基础作用，但它也展示出了一些结构上的脆弱性，特别是在面对复杂的现实世界应用时。因为它的全连接网络。下面是它的一些缺点。
 
 ### 梯度消失和爆炸（Vanishing and Exploding Gradients）
@@ -166,7 +166,7 @@ MLP 的决策过程通常是不透明的，这使得理解和解释模型的行�
 # 五、实验论证
 
 ### 实验目标
-![Local image](src/content/pump.jpg "pump")
+![Local image](src/content/KAN5.jpg "test")
 实验主要通过与 MLP（多层感知器）进行比较，验证 KAN（Kolmogorov-Arnold Networks）在各种任务中的性能优势，包括数据拟合、偏微分方程（PDE）求解等。
 
 ### 1. 数据拟合与 PDE 求解
@@ -232,4 +232,4 @@ MLP 的决策过程通常是不透明的，这使得理解和解释模型的行�
 2. **参数效率：** KAN 通过使用可学习的激活函数（样条函数），在较少的参数下达到了更高的精度，提高了模型的参数效率。
 3. **可解释性：** KAN 的可解释性较强，激活函数的可视化和符号化使得模型更易于理解和调试。
 4. **灵活性：** KAN 可以通过增加样条网格点数动态调整模型复杂度，适应不同的任务需求，显示出较高的灵活性。
-![Local image](src/content/pump.jpg "pump")
+![Local image](src/content/KAN6.jpg "author")
