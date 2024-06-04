@@ -9,7 +9,7 @@ draft: false
 
 # 一、从 MLP 讲起
 
-![Local image](src/content/KAN1.jpg "KAN")
+![Local image](src/content/KAN7.jpg "KAN")
 
 ## 多层感知机（MLP，Multi-Layer Perceptron）
 
