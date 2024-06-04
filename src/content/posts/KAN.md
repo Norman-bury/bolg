@@ -1,7 +1,7 @@
 ---
 title: What KAN I say？KAN网络简介
 published: 2024-06-01
-description: "详细介绍一下KAN网络"
+description: "从五个部分详细介绍一下KAN网络"
 tags: ["MLP", "KAN"]
 category: 学习记录
 draft: false
