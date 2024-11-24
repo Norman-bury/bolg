@@ -106,7 +106,7 @@ ChatGPT的成功一定是人类走向生成式强人工智能的主要关键节�
 
 **ChatGPT：**
 
-python```
+```python
 # 数据预处理步骤
 import os
 from PIL import Image
@@ -176,7 +176,7 @@ test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers
 
 **ChatGPT：**
 
-pyhton```
+```python
 # 使用预训练的ResNet50模型进行年龄预测
 import torch
 import torch.nn as nn
@@ -209,7 +209,7 @@ model = AgePredictor()
 
 **ChatGPT：**
 
-python```
+```python
 # 定义损失函数和优化器
 import torch.optim as optim
 
@@ -270,7 +270,7 @@ trained_model = train_model(model, train_loader, val_loader, criterion, optimize
 
 **ChatGPT：**
 
-python```
+```python
 # 计算MAE
 def calculate_mae(model, val_loader):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -304,7 +304,8 @@ validate_mae = calculate_mae(trained_model, val_loader)
 
 **ChatGPT：**
 
-python```
+```python
+
 # 生成预测结果并保存
 def generate_predictions(model, test_loader, output_file='pred_result.txt'):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
