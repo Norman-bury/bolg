@@ -61,10 +61,8 @@ $$ w^T x + b = 0 $$
 - $x$ 是输入特征向量
 
 **间隔（Margin）​**定义为两类数据到超平面的最小距离之和。对于任意数据点 $(x_i, y_i)$（$y_i \in \{-1, +1\}$为类别标签），到超平面的距离计算为：
-![25321742021057_ pic](https://github.com/user-attachments/assets/535c4e79-fbc0-40d8-bf6d-1ae961d27c1a)
-
 $$ \frac{|w^T x_i + b|}{\|w\|} $$
-
+![25321742021057_ pic](https://github.com/user-attachments/assets/535c4e79-fbc0-40d8-bf6d-1ae961d27c1a)
 最大间隔的目标等价于寻找使这个距离最大化的 $w$ 和 $b$。
 
 ---
@@ -84,10 +82,12 @@ $$ y_i(w^T x_i + b) = 1 $$
 ### 硬间隔最大化的数学表达
 优化目标转化为以下约束最优化问题：
 
-$$ \begin{aligned}
+$$ 
+\begin{aligned}
 \min_{w,b} & \quad \frac{1}{2} \|w\|^2 \\
 \text{s.t.} & \quad y_i(w^T x_i + b) \geq 1,\quad \forall i
-\end{aligned} $$
+\end{aligned} 
+$$
 
 推导过程：
 1. 间隔宽度为 $\frac{2}{\|w\|}$，最大化间隔等价于最小化 $\|w\|$
