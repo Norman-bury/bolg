@@ -111,11 +111,13 @@ $$ w = \sum_{i=1}^n \alpha_i y_i x_i $$
 
 当数据存在噪声或轻微非线性可分时，硬间隔的严格约束会导致模型无法收敛。为此引入**松弛变量 $\xi_i$** 来允许部分样本违反间隔要求：
 
-$$ \begin{aligned}
+$$ 
+\begin{aligned}
 \min_{w,b,\xi} & \quad \frac{1}{2}\|w\|^2 + C\sum_{i=1}^n \xi_i \\
 \text{s.t.} & \quad y_i(w^T x_i + b) \geq 1-\xi_i \\
 & \quad \xi_i \geq 0,\quad \forall i
-\end{aligned} $$
+\end{aligned} 
+$$
 
 参数说明：
 - $\xi_i$：第$i$个样本的松弛量，$\xi_i>0$表示该样本被误分类
@@ -149,18 +151,22 @@ $C$ 值直接影响模型行为：
 ### 原问题转化为对偶形式的意义
 将原始优化问题转化为对偶形式是SVM的核心数学技巧。原始问题：
 
-$$ \begin{aligned}
+$$
+\begin{aligned}
 \min_{w,b} & \quad \frac{1}{2}\|w\|^2 \\
 \text{s.t.} & \quad y_i(w^T x_i + b) \geq 1 
-\end{aligned} $$
+\end{aligned} 
+$$
 
 转化为对偶问题后：
 
-$$ \begin{aligned}
+$$ 
+\begin{aligned}
 \max_{\alpha} & \quad \sum_{i=1}^n \alpha_i - \frac{1}{2}\sum_{i,j}\alpha_i\alpha_j y_i y_j x_i^T x_j \\
 \text{s.t.} & \quad \sum_{i=1}^n \alpha_i y_i = 0 \\
 & \quad \alpha_i \geq 0
-\end{aligned} $$
+\end{aligned} 
+$$
 
 关键优势：
 1. 将维度从特征空间维度（$w$的维度）降低到样本数量维度（$\alpha$的维度）
