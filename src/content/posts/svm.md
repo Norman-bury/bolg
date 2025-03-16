@@ -1,4 +1,4 @@
-![25321742021057_ pic](https://github.com/user-attachments/assets/b6c73069-53ab-4097-bb5d-04d4051ff900)---
+---
 title: 支持向量机（Support Vector Machine）介绍
 published: 2025-03-15
 description: "如何通俗理解支持向量机，最流行和最受关注的机器学习算法"
