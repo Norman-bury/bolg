@@ -252,7 +252,7 @@ $$ K(x_i,x_j) = \phi(x_i)^T \phi(x_j) $$
 ---
 
 ## 3.2 常见核函数对比
-
+[演示网站](https://greitemann.dev/svm-demo）
 ### 线性核的适用场景
 $$ K(x_i,x_j) = x_i^T x_j + c $$
 
